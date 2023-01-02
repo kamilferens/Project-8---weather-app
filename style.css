@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color1: #f673ff;
+    --color2: #ffffff;
+    --color3: #e7c640;
+    --color4: #c3e987;
+    --color5: #1fb4ff;
+    /* --color1: #f179e6;
+    --color2: #f28d8a;
+    --color3: #e7c640;
+    --color4: #c3e987;
+    --color5: #1fb4ff; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to left top,
+        var(--color1) 20%,
+        var(--color2) 80%
+    );
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    width: 25em;
+    height: 30em;
+    background-color: blue;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    background-color: red;
+    height: 8em;
+    background: var(--color5);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1em 3em; */
+    padding: 1em;
+    align-items: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.content {
+    background-color: green;
+    /* height 100% - proporcje regulowane przez wysokość .header'a */
+    height: 100%;
+    background: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.weather-icon {
+    width: 6em;
+    height: 4em;
+    /* To tak, żeby sprawdzić wielkość obrazka jak już się pojawi  */
+    /* background-color: red; */
+}
+
+.localisation {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.property {
+    font-size: 1.2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    line-height: 2em;
+}
+
+.property:last-child {
+    border-bottom: none;
+}
+
+.property:hover {
+    background: rgb(197, 195, 195);
+}
+
+.property-name {
+}
+
+.property-value {
+    display: inline-flex;
+}
